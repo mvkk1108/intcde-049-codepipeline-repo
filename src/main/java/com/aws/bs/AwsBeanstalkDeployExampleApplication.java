@@ -24,4 +24,9 @@ public class AwsBeanstalkDeployExampleApplication {
 	{
 		return "Hi "+name +" Welcome to Elastic Beanstalk Deployment";
 	}
+	@GetMapping("/employee")
+	public Employee emp()
+	{
+		return new Employee(1,"krishna",70000);
+	}
 }
